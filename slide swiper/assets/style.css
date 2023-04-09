@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+.container{
+    max-width: 1330px;
+    padding-inline: 15px;
+    margin: 0 auto ;
+padding-top: 100px;
+}
+.title{
+    font-size: 30px;
+    line-height: 29px;
+    margin: 60px 0;
+    font-weight: 300;
+}
+.swiper-wrapper{
+    margin-bottom: 80px;
+    position: relative;
+}
+.swiper-wrapper .swiper-slide{
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+background-color: #e7e1e1;
+transition: all .6s ease ;
+}
+.swiper-wrapper .swiper-slide.img{
+    height:60%;
+    margin: 0 auto;
+    object-fit: contain;
+    object-position: center;
+    width: 230px;
+    transition: all 1s ease;
+}
