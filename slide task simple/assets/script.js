@@ -8,17 +8,23 @@ function currentSlide(n){
     showSlides(slideIndex=n);
 }
 function showSlides(n){
+
     let i;
     let slide=document.getElementsByClassName("slide");
     let dot=document.getElementsByClassName("dot");
-    if(n>1){slideIndex=1}
-    if(n<1){slideIndex=slide.length}
+    console.log(n);
+    
+    if(n==0){slideIndex=1}
+    if(n>slide.length){slideIndex=1}
     for(i=0;i<slide.length;i++){
         slide[i].style.display="none";
     }
     for(i=0;i<slide.length;i++){
         dot[i].className=dot[i].className.replace(" active","");
     }
-    slide[slideIndex-1].display="block";
+    
+    console.log(slideIndex);
+    
+    slide[slideIndex-1].style.display="block";
     dot[slideIndex-1].className +=" active";
 }
